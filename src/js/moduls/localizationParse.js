@@ -2,6 +2,7 @@ import {
   PRICE_PER_YEAR,
   PRICE_MONTH_PER_YEAR,
   PRICE_PER_MONTH,
+  LANG_LIST,
 } from "./constants";
 
 export default async function localizationParse(langName) {
@@ -41,7 +42,6 @@ export default async function localizationParse(langName) {
       return localizationData;
     } else {
       console.log(`The request failed. Error code ${response.status}`);
-      getLocalizationData("en");
     }
   };
 

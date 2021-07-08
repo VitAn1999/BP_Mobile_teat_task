@@ -1,8 +1,8 @@
 import { MONTHLY_HREF, YEARLY_HREF } from "./constants";
 
 export default function toggleBtn() {
-  let bannerYearly = document.querySelector(".banner_yearly");
-  let bannerMonthly = document.querySelector(".banner_monthly");
+  let bannerYearly = document.querySelector(".yearly");
+  let bannerMonthly = document.querySelector(".monthly");
   let continueBtn = document.querySelector(".continue");
 
   bannerMonthly.addEventListener("click", () => {
