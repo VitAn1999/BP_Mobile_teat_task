@@ -383,7 +383,10 @@ body {
   .banner {
     width: 140px;
   }
-
+  .banner__promo {
+    right: 2px;
+    top: -1px;
+  }
   .banner__addon {
     padding: 0 2px;
     width: 140px;
