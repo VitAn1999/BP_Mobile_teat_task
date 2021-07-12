@@ -2,7 +2,10 @@ import { LANG_LIST } from "./constants";
 
 export default function getUrl() {
   let inputLang = window.location.search.split("=")[1];
-  inputLang = LANG_LIST.includes(inputLang) ? inputLang : "en";
+
+  if (inputLang && !LANG_LIST.includes(inputLang)) {
+    inputLang = "en";
+  }
 
   let userLang = inputLang || window.navigator.language.substr(0, 2);
 
